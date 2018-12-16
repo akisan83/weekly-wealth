@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- BS responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Weekly wealth</title>
+
+
+
+  <!-- bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Wealth Prediction</h1>
+
+  <div class="">
+    <div class="main-gua gua6-present">
+      <!-- selected of present gua -->
+      <p id="textUpGua" class="guaSelectText">Please select upper Gua</p>
+      <p id="textDownGua" class="guaSelectText">Please select down Gua</p>
+      <p id="guaName" class="guaSelectText"></p>
+      <br>
+
+      <!-- up gua selector -->
+      <select id="imgList" onchange="guaName()">
+        <option value="images/qian.png" data-description="天">乾</option>
+        <option value="images/dui.png" data-description="澤">兑</option>
+        <option value="images/li.png" data-description="火">離</option>
+        <option value="images/zhen.png" data-description="雷">震</option>
+        <option value="images/xun.png" data-description="風">巽</option>
+        <option value="images/kan.png" data-description="水">坎</option>
+        <option value="images/gen.png" data-description="山">艮</option>
+        <option value="images/kun.png" data-description="地">坤</option>
+      </select>
+
+      <!-- down gua selector -->
+      <select id="imgList2" onchange="guaName()">
+        <option value="images/qian.png" data-description="天">乾</option>
+        <option value="images/dui.png" data-description="澤">兑</option>
+        <option value="images/li.png" data-description="火">離</option>
+        <option value="images/zhen.png" data-description="雷">震</option>
+        <option value="images/xun.png" data-description="風">巽</option>
+        <option value="images/kan.png" data-description="水">坎</option>
+        <option value="images/gen.png" data-description="山">艮</option>
+        <option value="images/kun.png" data-description="地">坤</option>
+      </select>
+      <br>
+
+      <!-- up-gua & down-gua Image display -->
+      <img id="imageUpGua" width="100" height="80" src="images/qian.png" />
+      <br>
+      <img id="imageDownGua" width="100" height="80" src="images/qian.png" />
+
+
+
+
+
+    </div>
+    <!-- present gua Finish -->
+
+    <!-- tranform-gua start here -->
+    <div class="main-gua gua6-transform">
+      <!-- new code start here -->
+      <!-- selected of present gua -->
+      <p id="textUpGua-t" class="guaSelectText"></p>
+      <p id="textDownGua-t" class="guaSelectText"></p>
+      <p id="guaName-t" class="guaSelectText"></p>
+      <br>
+
+      <!-- up-gua & down-gua Image display -->
+      <img id="imageUpGua" width="100" height="80" src="images/qian.png" />
+      <br>
+      <img id="imageDownGua" width="100" height="80" src="images/qian.png" />
+
+
+    </div>
+    <!-- transform-gua end here -->
+
+  </div>
+  </div>
+
+  <!-- jquey -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <script src="index.js" charset="utf-8"></script>
+
+</body>
+
+</html>
